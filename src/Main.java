@@ -37,9 +37,8 @@ void main() {
         char[] vowels = {'ა', 'ე', 'ი', 'ო', 'უ'};
         int count = 0;
         for (int i = 0; i < sentence.length(); i++) {
-            char sound = sentence.charAt(i);
             for (int j = 0; j < vowels.length; j++) {
-                if (sound == vowels[j]) {
+                if (sentence.charAt(i) == vowels[j] ) {
                     count++;
                     break;
                 }
